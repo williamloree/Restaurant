@@ -6,15 +6,12 @@ class Restaurant {
 
   addServer(server: Server) {
     this.servers.push(server);
-    console.log(this.servers)
   }
 
   CA() {
       for (const server of this.servers) {
         this.CAglobal = this.CAglobal + server.command; 
-
       }
-      console.log(this.servers)
   }
 }
 

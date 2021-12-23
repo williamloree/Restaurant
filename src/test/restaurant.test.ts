@@ -8,15 +8,34 @@ describe("SCOPE chiffre d'affaires", () => {
   // 	ALORS le chiffre d'affaires de la franchise est X * Y
   // 	CAS(X = 0; X = 1; X = 2; X = 100)
   // 	CAS(Y = 1.0)
-  it("SCOPE Restaurant", () => {
+  it("SCOPE Restaurant 2", () => {
     let restaurant = new Restaurant();
-    let server = new Server();
-    let server2 = new Server();
-    restaurant.addServer(server);
-    restaurant.addServer(server2);
-    server.addCommand(50);
-    server2.addCommand(100);
+    // let server = new Server();
+    // let server2 = new Server();
+    for (let index = 0; index < 2; index++) {
+      
+      let server = new Server();
+      restaurant.addServer(server);
+      server.addCommand(1);
+      
+    }
     restaurant.CA();
-    expect(restaurant.CAglobal).toBe(150)
+    expect(restaurant.CAglobal).toBe(2)
+  });
+
+  it("SCOPE Restaurant 100", () => {
+    let restaurant = new Restaurant();
+    // let server = new Server();
+    // let server2 = new Server();
+    for (let index = 0; index < 100; index++) {
+      
+      let server = new Server();
+      restaurant.addServer(server);
+      server.addCommand(1);
+      
+    }
+    
+    restaurant.CA();
+    expect(restaurant.CAglobal).toBe(100)
   });
 });
