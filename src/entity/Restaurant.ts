@@ -1,17 +1,17 @@
-import Server from "./Server";
+import Waiter from "./Waiter";
 
 class Restaurant {
-  servers: Server[] = [];
-  CAglobal: number  = 0;
+  waiters: Waiter[] = [];
+  turnOverGlobal: number = 0;
 
-  addServer(server: Server) {
-    this.servers.push(server);
+  addWaiter(waiter: Waiter) {
+    this.waiters.push(waiter);
   }
 
-  CA() {
-      for (const server of this.servers) {
-        this.CAglobal = this.CAglobal + server.command; 
-      }
+  calTurnOver() {
+    for (const waiter of this.waiters) {
+      this.turnOverGlobal = this.turnOverGlobal + waiter.order;
+    }
   }
 }
 
