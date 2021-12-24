@@ -6,17 +6,30 @@
   "scripts": {
     "dev": "tsc-watch --onSuccess \"node dist/main.js\"",
     "build": "tsc",
-    "test": "jest"
+    "test": "tsc && ava"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^27.0.3",
     "@types/node": "^13.7.4",
-    "jest": "^27.4.3",
-    "ts-jest": "^27.0.7",
     "tsc-watch": "^4.1.0",
     "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "ava": "^3.15.0",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.12.0"
+  },
+  "ava": {
+    "files": [
+      "src/**/*.test.ts"
+    ],
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
   }
 }

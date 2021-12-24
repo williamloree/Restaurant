@@ -1,14 +1,13 @@
+import test from 'ava';
 import Restaurant from "../entity/Restaurant";
 import Waiter from "../entity/Waiter";
 import Franchise from "../entity/Franchise";
 
-describe("SCOPE EarlyService", () => {
-  it("3 table", () => {
+  test("3 table", () => {
     // ÉTANT DONNE un restaurant ayant 3 tables
     // 	QUAND le service commence
     // 	ALORS elles sont toutes affectées au Maître d'Hôtel
   });
-});
 
 // ÉTANT DONNE un restaurant ayant 3 tables
 // 	QUAND le service commence
