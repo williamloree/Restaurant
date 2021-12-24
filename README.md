@@ -1,10 +1,18 @@
 # App restaurant
 
-- Author : William LOREE
+- Student :
+  - William loree
+  - Jean-Charles cano
+  - Valentin moulin
+  - Victor Duval
+
 - Dependencies :
+  - @types/jest
+  - @types/node
+  - jest
+  - ts-jest
   - typescript
   - tsc-watch
-  - @types/node
 
 ___
 
@@ -12,7 +20,8 @@ ___
 
 ___
 
-```
+```js
 npm i 
-npm run dev
+
+npm run test
 ```

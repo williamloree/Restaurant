@@ -1,8 +1,14 @@
 import Restaurant from "./Restaurant";
 
 class Franchise {
-  restaurants: Restaurant[] = [];
-  turnOverFranchise: number = 0;
+  restaurants: Restaurant[];
+  turnOverFranchise: number;
+
+  constructor(restaurants = [],turnOverFranchise = 0){
+    this.restaurants = restaurants
+    this.turnOverFranchise = turnOverFranchise
+  }
+
   addRestaurant(restaurant: Restaurant) {
     this.restaurants.push(restaurant);
   }

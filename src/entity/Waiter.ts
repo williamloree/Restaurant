@@ -1,6 +1,13 @@
 class Waiter {
-  order: number = 0;
-  turnOver: number = 0;
+  name: string;
+  order: number;
+  turnOver: number;
+
+  constructor(name = "roger", order = 0,turnOver = 0){
+    this.name = name
+    this.order = order
+    this.turnOver = turnOver
+  }
 
   addCommand(commands: number) {
     this.order = this.order + commands;

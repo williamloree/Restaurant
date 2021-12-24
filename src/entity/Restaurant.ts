@@ -1,8 +1,13 @@
 import Waiter from "./Waiter";
 
 class Restaurant {
-  waiters: Waiter[] = [];
-  turnOverGlobal: number = 0;
+  waiters: Waiter[];
+  turnOverGlobal: number;
+
+  constructor(waiters = [],turnOverGlobal = 0){
+    this.waiters = waiters
+    this.turnOverGlobal = turnOverGlobal
+  }
 
   addWaiter(waiter: Waiter) {
     this.waiters.push(waiter);
