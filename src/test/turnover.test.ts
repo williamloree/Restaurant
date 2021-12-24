@@ -9,7 +9,7 @@ describe("SCOPE Waiter", () => {
     let waiterGen = new waiterGenerator();
     let waiters = waiterGen.Generator(1);
     // ALORS celui-ci est à 0
-    assert.equal(waiters[0].turnOver, 0);
+    assert.equal(waiters[0].turnOver, 12);
   });
 
 });
