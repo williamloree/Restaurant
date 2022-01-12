@@ -18,5 +18,8 @@
     "ts-jest": "^27.0.7",
     "tsc-watch": "^4.1.0",
     "typescript": "^3.8.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }
